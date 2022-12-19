@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    android:backgroundTint="#0D0D0D">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_prueba">
+
+        <TextView
+            android:id="@+id/itemEmprendedor"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/item_text"
+            android:padding="1dp"
+            android:text="Emprendimiento"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemZona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/item_text"
+            android:padding="1dp"
+            android:textAlignment="center"
+            android:text="ZONA SUR"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/itemEmprendedor" />
+
+        <TextView
+            android:id="@+id/itemDireccion"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_text"
+            android:padding="1dp"
+            android:text="direccion"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/itemECalles"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemEmprendedor" />
+
+        <TextView
+            android:id="@+id/itemECalles"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_text"
+            android:padding="1dp"
+            android:text="entre calles"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/itemDireccion"
+            app:layout_constraintTop_toBottomOf="@+id/itemEmprendedor" />
+
+        <TextView
+            android:id="@+id/itemLocalidad"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_text"
+            android:padding="1dp"
+            android:text="Localidad"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/itemDireccion"
+            app:layout_constraintTop_toBottomOf="@+id/itemDireccion" />
+
+        <TextView
+            android:id="@+id/itemPrecio"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_text"
+            android:padding="1dp"
+            android:text="$$$"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/itemLocalidad"
+            app:layout_constraintTop_toBottomOf="@+id/itemECalles" />
+
+        <TextView
+            android:id="@+id/itemHorario"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/item_text"
+            android:padding="1dp"
+            android:text="11-18hs"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/itemPrecio"
+            app:layout_constraintTop_toBottomOf="@+id/itemPrecio"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/itemNombre"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_text"
+            android:text="Matias arguello"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/itemLocalidad"
+            app:layout_constraintTop_toBottomOf="@+id/itemLocalidad" />
+
+        <TextView
+            android:id="@+id/itemNumero"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/item_text"
+            android:text="1162741508"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/itemNombre"
+            app:layout_constraintTop_toBottomOf="@+id/itemNombre" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

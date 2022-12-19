@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">intentoMotomensajeria1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_descp_agregar_viajes">Agregar Viajes</string>
+    <string name="content_descp_ver_precios">Ver Precios</string>
+    <string name="content_descp_cancelar_viaje">Cancelar Viaje</string>
+    <string name="content_descp_nuestros_clientes">Nuestros Clientes</string>
+    <string name="content_descp_mis_envios">Mis Envios</string>
+    <string name="content_descp_ayuda">Ayuda</string>
+    <string-array name="zona">
+        <item>ZONA OESTE</item>
+        <item>ZONA NORTE</item>
+        <item>ZONA SUR</item>
+    </string-array>
+</resources>

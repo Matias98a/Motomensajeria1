@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarViajes"
+    android:background="#0D0D0D">
+
+
+    <TextView
+        android:id="@+id/agvEmprendedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="Emprendimiento"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAgvDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="55dp"
+        android:ems="10"
+        android:hint="Direccion"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agvEmprendedor" />
+
+    <EditText
+        android:id="@+id/edtAgvEntreCalle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Entre Calles"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/edtAgvDireccion"
+        app:layout_constraintTop_toBottomOf="@+id/edtAgvDireccion" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#0D0D0D"
+        app:layout_constraintStart_toStartOf="@+id/edtAgvEntreCalle"
+        app:layout_constraintTop_toBottomOf="@+id/edtAgvEntreCalle">
+
+        <AutoCompleteTextView
+            android:id="@+id/edtZonaId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#0D0D0D"
+            android:inputType="none"
+            android:text="Elegir Zona"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#0D0D0D"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoLocalidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:backgroundTint="#0D0D0D"
+            android:textColor="@color/white"
+            android:text="Localidad" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/edtAgvHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Rango Horario"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/edtAgvNumero"
+        app:layout_constraintTop_toBottomOf="@+id/edtAgvNumero" />
+
+    <EditText
+        android:id="@+id/edtAgvCostoProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Costo Producto"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/edtAgvHorario"
+        app:layout_constraintTop_toBottomOf="@+id/edtAgvHorario" />
+
+    <Button
+        android:id="@+id/btnAgvAgregarViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#005096"
+        android:text="Agregar Viaje"
+        android:textColor="@color/white"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAgvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Nombre de cliente"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <EditText
+        android:id="@+id/edtAgvNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="numero de cliente"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/edtAgvNombre"
+        app:layout_constraintTop_toBottomOf="@+id/edtAgvNombre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
